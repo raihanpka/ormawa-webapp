@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,100..900,0..100,0..1;1,9..144,100..900,0..100,0..1&display=swap');
+@import url('https://api.fontshare.com/v2/css?f[]=satoshi@1,2&display=swap');
 
 @tailwind base;
 @tailwind components;
@@ -49,6 +51,15 @@
     --golden-yellow-dark: 51 99% 42%;
     --cream: 51 99% 96%;
     --cream-muted: 51 30% 85%;
+    
+    /* Figma Design Tokens */
+    --blue-light: 218 81% 95%; /* #E2F2FC */
+    --grey-light: 0 0% 92%; /* #EAEAEA */
+    --grey-dark: 0 0% 12%; /* #1F1F1F */
+    --blue-primary: 221 65% 35%; /* #2350A6 */
+    --blue-dark: 226 70% 18%; /* #123880 */
+    --white: 0 0% 100%;
+    --blue-light-text: 212 84% 94%; /* #ECF6FD */
 
     /* Gradients */
     --gradient-hero: linear-gradient(135deg, hsl(228 59% 12%) 0%, hsl(228 59% 20%) 50%, hsl(228 50% 30%) 100%);

@@ -14,8 +14,14 @@ export default {
     },
     extend: {
       fontFamily: {
-        sans: ['Inter', 'system-ui', 'sans-serif'],
-        display: ['Inter', 'system-ui', 'sans-serif'],
+        sans: ['Satoshi', 'Inter', 'system-ui', 'sans-serif'],
+        display: ['Fraunces', 'Inter', 'system-ui', 'sans-serif'],
+        fraunces: ['Fraunces', 'serif'],
+        satoshi: ['Satoshi', 'sans-serif'],
+        barmeno: ['Barmeno', 'sans-serif'],
+      },
+      backgroundImage: {
+        'gradient-radial': 'radial-gradient(circle, var(--tw-gradient-stops))',
       },
       colors: {
         border: "hsl(var(--border))",

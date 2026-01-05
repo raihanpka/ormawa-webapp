@@ -1,0 +1,115 @@
+{
+  "navbar": {
+    "title": "LPJ ORMAWA IPB 2025",
+    "nav": {
+      "landscape": "Landscape",
+      "achievements": "Achievements",
+      "collaboration": "Collaboration",
+      "reflection": "Reflection",
+      "flagship": "Flagship Programs"
+    }
+  },
+  "chapters": {
+    "chapter1": {
+      "number": "01",
+      "title": "Dynamic\nLandscape",
+      "question": "How do structural and compositional changes shape the dynamics of student organizations in 2025?",
+      "sections": [
+        "1.1. Growth Trends and Dynamics",
+        "1.2. Institutional Structure and Typology",
+        "1.3. Student Involvement Numbers",
+        "1.4. Distribution Mapping"
+      ],
+      "buttonExplore": "Explore Chapter 1",
+      "buttonTakeaways": "Key Takeaways"
+    },
+    "chapter2": {
+      "number": "02",
+      "title": "Student Organization Actions and Achievements",
+      "question": "To what extent are student organization work programs realized and provide real impact on student participation?",
+      "sections": [
+        "2.1. Quantitative Achievements",
+        "2.2. Productivity and Activity Diversity",
+        "2.3. Implementation Scale and Reach",
+        "2.4. Student Organization Contribution to SDGs Agenda",
+        "2.5. Student Organization Fund Allocation and Distribution",
+        "2.6. Student Organization Activity Risks"
+      ],
+      "buttonExplore": "Explore Chapter 2",
+      "buttonTakeaways": "Key Takeaways"
+    },
+    "chapter3": {
+      "number": "03",
+      "title": "Student Organization Collaboration Space",
+      "question": "With whom do student organizations collaborate and how do these partnership patterns support program quality?",
+      "sections": [
+        "3.1. Intensity and Collaboration Patterns",
+        "3.2. Collaboration Partners and Partnership Forms",
+        "3.3. Collaboration Impact on Capacity"
+      ],
+      "buttonExplore": "Explore Chapter 3",
+      "buttonTakeaways": "Key Takeaways"
+    },
+    "chapter4": {
+      "number": "04",
+      "title": "Student Organization Performance Reflection",
+      "question": "How do student organizations view the quality of services, institutional support, and effectiveness of engagement received?",
+      "sections": [
+        "4.1. Factors Influencing Student Organization Dynamics",
+        "4.2. Ditmawa Service Quality",
+        "4.3. Image and Digital Media Participation",
+        "4.4. Social Media Performance and Participation Level"
+      ],
+      "buttonExplore": "Explore Chapter 4",
+      "buttonTakeaways": "Key Takeaways"
+    },
+    "chapter5": {
+      "number": "05",
+      "title": "Flagship\nPrograms",
+      "question": "Which programs demonstrate the most significant achievements, innovations, and impact in supporting student development?",
+      "sections": [
+        "5.1. Flagship Programs in Entrepreneurship",
+        "5.2. Flagship Programs in Community Service",
+        "5.3. Flagship Programs in Competency Development",
+        "5.4. Flagship Programs in Competition",
+        "5.5. Flagship Programs in Talents & Interests",
+        "5.6. Flagship Programs in Leadership"
+      ],
+      "buttonExplore": "Explore Chapter 5",
+      "buttonTakeaways": "Key Takeaways"
+    }
+  },
+  "footer": {
+    "title": {
+      "line1": "Sustainability Footprint",
+      "line2": "Student",
+      "line3": "Organizations"
+    },
+    "subtitle": "ORMAWA IPB REPORT 2025",
+    "directorate": {
+      "title": "Student Affairs Directorate\nIPB University",
+      "address": "Andi Hakim Nasoetion Building 1st Floor, IPB Dramaga Campus, Bogor 16680 West Java, Indonesia",
+      "email": "Email: ditmawa@apps.ipb.ac.id"
+    },
+    "reportOverview": {
+      "title": "Report\nOverview",
+      "sections": [
+        "Dynamic Landscape",
+        "Independence & Action",
+        "Collaboration Network",
+        "Performance Reflection",
+        "Flagship Programs"
+      ]
+    },
+    "relatedLinks": {
+      "title": "Related Links",
+      "links": [
+        "IPB University Official",
+        "Ditmawa IPB University",
+        "Independent Learning (MBKM)"
+      ]
+    },
+    "collaboration": "In collaboration with Lemma Bercerita",
+    "copyright": "© Student Affairs Directorate IPB University 2026"
+  }
+}

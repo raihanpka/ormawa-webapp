@@ -1,0 +1,115 @@
+{
+  "navbar": {
+    "title": "LPJ ORMAWA IPB 2025",
+    "nav": {
+      "landscape": "Lanskap",
+      "achievements": "Capaian",
+      "collaboration": "Kolaborasi",
+      "reflection": "Refleksi",
+      "flagship": "Program Unggulan"
+    }
+  },
+  "chapters": {
+    "chapter1": {
+      "number": "01",
+      "title": "Lanskap Dinamis Ormawa",
+      "question": "Bagaimana perubahan struktur dan komposisi Ormawa membentuk dinamika Ormawa pada tahun 2025?",
+      "sections": [
+        "1.1. Tren Pertumbuhan dan Dinamika Ormawa",
+        "1.2. Struktur Kelembagaan dan Tipologi Ormawa",
+        "1.3. Jumlah Keterlibatan Mahasiswa",
+        "1.4. Pemetaan Distribusi Ormawa"
+      ],
+      "buttonExplore": "Jelajahi Bab 1",
+      "buttonTakeaways": "Key Takeaways"
+    },
+    "chapter2": {
+      "number": "02",
+      "title": "Aksi dan Capaian Ormawa",
+      "question": "Sejauh mana program Kerja Ormawa terealisasi dan memberikan dampak nyata bagi partisipasi mahasiswa?",
+      "sections": [
+        "2.1. Capaian Kuantitatif",
+        "2.2. Produktivitas dan Ragam Kegiatan",
+        "2.3. Skala Implementasi dan Jangkauan",
+        "2.4. Kontribusi Ormawa terhadap Agenda SDGs",
+        "2.5. Alokasi dan Distribusi Dana Ormawa",
+        "2.6. Risiko Kegiatan Ormawa"
+      ],
+      "buttonExplore": "Jelajahi Bab 2",
+      "buttonTakeaways": "Key Takeaways"
+    },
+    "chapter3": {
+      "number": "03",
+      "title": "Ruang Kolaborasi Ormawa",
+      "question": "Bersama siapa Ormawa berkolaborasi dan bagaimana pola kemitraan tersebut mendukung kualitas program?",
+      "sections": [
+        "3.1. Intesitas dan Pola Kolaborasi",
+        "3.2. Mitra Kolaborasi dan Bentuk Kemitraan",
+        "3.3. Dampak Kolaborasi terhadap Kapasitas"
+      ],
+      "buttonExplore": "Jelajahi Bab 3",
+      "buttonTakeaways": "Key Takeaways"
+    },
+    "chapter4": {
+      "number": "04",
+      "title": "Refleksi Kinerja Ormawa",
+      "question": "Bagaimana Ormawa melihat kualitas layanan, dukungan institusi, dan efektivitas keterlibatan yang diterima?",
+      "sections": [
+        "4.1. Faktor Pengaruh Dinamika Ormawa",
+        "4.2. Kualitas Pelayanan Ditmawa",
+        "4.3, Citra dan Partisipasi Media Digital",
+        "4.4. Performa Media Sosial dan Tingkat Partipasi"
+      ],
+      "buttonExplore": "Jelajahi Bab 4",
+      "buttonTakeaways": "Key Takeaways"
+    },
+    "chapter5": {
+      "number": "05",
+      "title": "Program Unggulan\nOrmawa",
+      "question": "Program apa yang menunjukkan capaian, inovasi, dan dampak paling signifikan dalam mendukung pengembangan mahasiswa?",
+      "sections": [
+        "5.1. Program Unggulan Bidang Kewirausahaan",
+        "5.2. Program Unggulan Bidang Pengabdian",
+        "5.3. Program Unggulan Bidang Kompetensi",
+        "5.4. Program Unggulan Bidang Kompetisi",
+        "5.5. Program Unggulan Bidang Minat Bakat",
+        "5.6. Program Unggulan Bidang Kepemimpinan"
+      ],
+      "buttonExplore": "Jelajahi Bab 5",
+      "buttonTakeaways": "Key Takeaways"
+    }
+  },
+  "footer": {
+    "title": {
+      "line1": "Jejak Keberlanjutan",
+      "line2": "Organisasi",
+      "line3": "Kemahasiswaan"
+    },
+    "subtitle": "LAPORAN ORMAWA IPB 2025",
+    "directorate": {
+      "title": "Direktorat Kemahasiswaan\nIPB University",
+      "address": "Gedung Andi Hakim Nasoetion Lt. 1 Kampus IPB Dramaga, Bogor 16680 Jawa Barat, Indonesia",
+      "email": "Email: ditmawa@apps.ipb.ac.id"
+    },
+    "reportOverview": {
+      "title": "Ikhtisar\nLaporan",
+      "sections": [
+        "Lanskap Dinamis",
+        "Kemandirian & Aksi",
+        "Jejaring Kolaborasi",
+        "Refleksi Kinerja",
+        "Program Unggulan"
+      ]
+    },
+    "relatedLinks": {
+      "title": "Tautan Terkait",
+      "links": [
+        "IPB University Official",
+        "Ditmawa IPB University",
+        "Merdeka Belajar (MBKM)"
+      ]
+    },
+    "collaboration": "Berkolaborasi dengan Lemma Bercerita",
+    "copyright": "© Direktorat Kemahasiswaan IPB University 2026"
+  }
+}
