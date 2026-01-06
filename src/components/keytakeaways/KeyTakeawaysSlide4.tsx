@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import { useEffect, useState } from "react";
 
 const imgBackground = "https://www.figma.com/api/mcp/asset/f0342943-2f1c-4062-82dd-4fbc6098e4fc";
 const imgVector = "https://www.figma.com/api/mcp/asset/cbbe6bfa-ab23-40f0-af2f-454bcc40ae53";
@@ -16,6 +17,23 @@ const imgPhoto3 = "https://www.figma.com/api/mcp/asset/34b566cc-c251-4963-90df-8
 const imgVector478 = "https://www.figma.com/api/mcp/asset/75cba1c6-d2da-456f-84fe-621017a37eba";
 
 export function KeyTakeawaysSlide4({ className }: { className?: string }) {
+  const [scale, setScale] = useState(1);
+
+  useEffect(() => {
+    const updateScale = () => {
+      const viewportWidth = window.innerWidth;
+      const maxCardWidth = 1150;
+      if (viewportWidth < maxCardWidth) {
+        setScale(Math.min(1, viewportWidth / maxCardWidth));
+      } else {
+        setScale(1);
+      }
+    };
+    updateScale();
+    window.addEventListener('resize', updateScale);
+    return () => window.removeEventListener('resize', updateScale);
+  }, []);
+
   return (
     <div className={cn("flex flex-col items-center gap-[33px] w-full", className)} data-node-id="976:3176">
       {/* Title */}
@@ -37,12 +55,18 @@ export function KeyTakeawaysSlide4({ className }: { className?: string }) {
 
       {/* Card */}
       <div 
-        className="relative bg-white rounded-[16.759px] overflow-hidden w-full max-w-[1030px] aspect-[1030/636] shadow-[0px_0px_22.016px_0px_rgba(0,0,0,0.15)]"
+        className="relative bg-white rounded-[16.759px] w-full max-w-[1030px] aspect-[1030/636] shadow-[0px_0px_22.016px_0px_rgba(0,0,0,0.15)] overflow-clip"
         data-node-id="976:3335"
+        style={{ aspectRatio: '1030/636' }}
       >
         {/* Scaled Content Container */}
-        <div className="absolute inset-0 w-full h-full">
-          <div className="relative w-[1030px] h-[636px] origin-top-left transform scale-[min(1,calc(100vw/1030))]">
+        <div className="absolute inset-0 w-full h-full overflow-hidden">
+          <div 
+            className="relative w-[1030px] h-[636px] origin-top-left"
+            style={{
+              transform: `scale(${scale})`
+            }}
+          >
             
             {/* Background */}
             <div className="absolute left-[-282.18px] top-[-381px] w-[1594.578px] h-[2217px]" data-node-id="976:3336">

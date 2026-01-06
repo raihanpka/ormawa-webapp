@@ -28,16 +28,16 @@ export function KeyTakeawaysSection() {
 
   return (
     <div 
-      className="relative w-full flex flex-col items-center gap-8 md:gap-[33px] px-4 md:px-8 lg:px-16 py-12 md:py-[60px] min-h-screen justify-center overflow-hidden" 
+      className="relative w-full min-h-screen flex flex-col items-center justify-center gap-8 md:gap-[33px] px-4 md:px-8 lg:px-16 py-12 md:py-[60px] overflow-hidden" 
       data-name="Coba sini bro" 
       data-node-id="849:3419"
     >
-      {/* Background pattern */}
+      {/* Background pattern - dengan overflow hidden di sini */}
       <div 
-        className="absolute inset-0 pointer-events-none" 
+        className="absolute inset-0 pointer-events-none overflow-hidden" 
         data-node-id="849:3418"
       >
-        <img alt="" className="w-full h-full object-cover opacity-50 md:opacity-100" src={imgGroup2608519} />
+        <img alt="" className="w-full h-full object-cover" src={imgGroup2608519} />
       </div>
 
       {/* Title */}

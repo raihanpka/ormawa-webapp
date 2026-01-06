@@ -1,4 +1,5 @@
 import { cn } from "@/lib/utils";
+import { useEffect, useState } from "react";
 
 const img653899114923 = "https://www.figma.com/api/mcp/asset/6ee92db7-d807-4ad7-a2c7-b6f9a675067a";
 const imgTakBerjudul57420251220192217 = "https://www.figma.com/api/mcp/asset/0359f903-93a0-48d6-8fc7-99a4d82c0bf1";
@@ -10,6 +11,23 @@ const imgVector548 = "https://www.figma.com/api/mcp/asset/2b1eac87-02d7-4ec9-933
 const imgVector478 = "https://www.figma.com/api/mcp/asset/2198cfd5-5361-44d8-815a-de2fd9bcd7e1";
 
 export function KeyTakeawaysSlide2({ className }: { className?: string }) {
+  const [scale, setScale] = useState(1);
+
+  useEffect(() => {
+    const updateScale = () => {
+      const viewportWidth = window.innerWidth;
+      const maxCardWidth = 1150;
+      if (viewportWidth < maxCardWidth) {
+        setScale(Math.min(1, viewportWidth / maxCardWidth));
+      } else {
+        setScale(1);
+      }
+    };
+    updateScale();
+    window.addEventListener('resize', updateScale);
+    return () => window.removeEventListener('resize', updateScale);
+  }, []);
+
   return (
     <div className={cn("flex flex-col items-center gap-[33px] w-full", className)} data-node-id="976:3090">
       {/* Main Heading */}
@@ -31,12 +49,18 @@ export function KeyTakeawaysSlide2({ className }: { className?: string }) {
 
       {/* Card */}
       <div 
-        className="relative bg-white rounded-[16.759px] overflow-hidden w-full max-w-[1030px] aspect-[1030/636] shadow-[0px_0px_22.016px_0px_rgba(0,0,0,0.15)]"
+        className="relative bg-white rounded-[16.759px] w-full max-w-[1030px] aspect-[1030/636] shadow-[0px_0px_22.016px_0px_rgba(0,0,0,0.15)] overflow-clip"
         data-node-id="976:3258"
+        style={{ aspectRatio: '1030/636' }}
       >
         {/* Scaled Content Container */}
-        <div className="absolute inset-0 w-full h-full">
-            <div className="relative w-[1030px] h-[636px] origin-top-left transform sm:scale-[calc(100vw/1030)] md:scale-100">
+        <div className="absolute inset-0 w-full h-full overflow-hidden">
+            <div 
+              className="relative w-[1030px] h-[636px] origin-top-left"
+              style={{
+                transform: `scale(${scale})`
+              }}
+            >
                 {/* Background Layers */}
                 <div className="absolute left-[-282.18px] top-[-381px] w-[1594.578px] h-[2217px]" data-node-id="976:3259">
                     <div className="absolute left-[75.18px] top-[271px] w-[1464px] h-[1946px] mix-blend-overlay opacity-[0.23]">
