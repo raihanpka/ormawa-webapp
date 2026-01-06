@@ -49,28 +49,32 @@ export function KeyTakeawaysSlide2({ className }: { className?: string }) {
 
       {/* Card */}
       <div 
-        className="relative bg-white rounded-[16.759px] w-full max-w-[1030px] aspect-[1030/636] shadow-[0px_0px_22.016px_0px_rgba(0,0,0,0.15)] overflow-clip"
+        className="relative bg-white rounded-[16.759px] w-full max-w-[1030px] shadow-[0px_0px_22.016px_0px_rgba(0,0,0,0.15)] overflow-hidden"
         data-node-id="976:3258"
         style={{ aspectRatio: '1030/636' }}
       >
         {/* Scaled Content Container */}
-        <div className="absolute inset-0 w-full h-full overflow-hidden">
+        <div className="absolute inset-0 w-full h-full">
             <div 
-              className="relative w-[1030px] h-[636px] origin-top-left"
+              className="relative w-full h-full origin-center"
               style={{
-                transform: `scale(${scale})`
+                transform: `scale(${scale})`,
+                transformOrigin: 'center center'
               }}
             >
-                {/* Background Layers */}
-                <div className="absolute left-[-282.18px] top-[-381px] w-[1594.578px] h-[2217px]" data-node-id="976:3259">
-                    <div className="absolute left-[75.18px] top-[271px] w-[1464px] h-[1946px] mix-blend-overlay opacity-[0.23]">
-                        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                            <img className="absolute h-full left-[-16.48%] max-w-none top-0 w-[132.95%]" alt="" src={img653899114923} />
-                        </div>
-                    </div>
-                    
-                    {/* Masked Group */}
-                    <div className="absolute left-[340.18px] top-[419px] w-[897px] h-[252px] rounded-[14.984px] overflow-hidden" data-node-id="976:3261">
+              {/* Green Background Card - Metrik Kinerja */}
+              <div 
+                className="absolute bg-[#0e7540] rounded-[15px] top-[50%] left-[50%] -translate-x-1/2 -translate-y-1/2 overflow-hidden"
+                style={{ width: '87.1%', height: '39.6%' }}
+                data-node-id="976:3261"
+              >
+                {/* Background pattern overlay */}
+                <div className="absolute inset-0 mix-blend-overlay opacity-20">
+                  <img className="w-full h-full object-cover" alt="" src={img653899114923} />
+                </div>
+                
+                {/* Content - responsive positioned */}
+                <div className="absolute inset-0">
                         <div className="absolute flex inset-[-0.22%_-5.84%_-34.59%_28.62%] items-center justify-center">
                             <div className="flex-none h-[692.58px] rotate-[270deg] scale-y-[-100%] w-[339.742px]">
                                 <div className="relative size-full">

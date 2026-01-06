@@ -32,19 +32,21 @@ export function KeyTakeawaysSection() {
       data-name="Coba sini bro" 
       data-node-id="849:3419"
     >
-      {/* Background pattern - dengan overflow hidden di sini */}
+      {/* Background pattern - z-0 stays behind */}
       <div 
-        className="absolute inset-0 pointer-events-none overflow-hidden" 
+        className="absolute inset-0 pointer-events-none overflow-hidden z-0" 
         data-node-id="849:3418"
       >
-        <img alt="" className="w-full h-full object-cover" src={imgGroup2608519} />
+        <img alt="" className="w-full h-full object-cover opacity-30" src={imgGroup2608519} />
       </div>
 
-      {/* Title */}
-      <KeyTakeawaysHeader />
+      {/* Title - z-10 */}
+      <div className="relative z-10">
+        <KeyTakeawaysHeader />
+      </div>
 
-      {/* Carousel Container */}
-      <div className="relative flex flex-col md:flex-row items-center justify-center gap-4 md:gap-[10px] w-full max-w-[1200px] z-10">
+      {/* Carousel Container - z-20 ensure cards are on top */}
+      <div className="relative flex flex-col md:flex-row items-center justify-center gap-4 md:gap-[10px] w-full max-w-[1200px] z-20">
         {/* Left Arrow */}
         <div className="hidden md:block flex-none">
           <button 

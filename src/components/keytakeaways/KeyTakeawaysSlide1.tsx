@@ -1,13 +1,13 @@
 import { cn } from "@/lib/utils";
 import { useEffect, useState } from "react";
 
-const img653899114923 = "https://www.figma.com/api/mcp/asset/6ee92db7-d807-4ad7-a2c7-b6f9a675067a";
-const imgTakBerjudul57420251220192217 = "https://www.figma.com/api/mcp/asset/0359f903-93a0-48d6-8fc7-99a4d82c0bf1";
-const imgTakBerjudul57420251220192057 = "https://www.figma.com/api/mcp/asset/7596a3eb-4579-42d6-a92c-42932f172d93";
-const imgGroup2608332 = "https://www.figma.com/api/mcp/asset/5dbc2e1c-762a-4c9e-ac4f-b69608bc2a19";
-const imgGroup2608333 = "https://www.figma.com/api/mcp/asset/0f97d90f-1af5-4775-a9e4-70aa7cd1a007";
-const imgVector547 = "https://www.figma.com/api/mcp/asset/d35e5b78-aaef-4a3c-99ed-62e57e2b3d9b";
-const imgVector462 = "https://www.figma.com/api/mcp/asset/d9e316e8-34ec-4529-ae48-9211bbad5b9d";
+const img653899114923 = "https://www.figma.com/api/mcp/asset/d3801852-60bf-4894-bb37-a7a51be83e5a";
+const imgTakBerjudul57420251220192217 = "https://www.figma.com/api/mcp/asset/4addf353-9a9f-4c4c-91eb-2f844ca21027";
+const imgTakBerjudul57420251220192057 = "https://www.figma.com/api/mcp/asset/96c5e1e1-30d0-4fd1-a5d3-ff291071de47";
+const imgGroup2608332 = "https://www.figma.com/api/mcp/asset/c278350b-ab90-4965-b22c-3da1ba4c1f6e";
+const imgGroup2608333 = "https://www.figma.com/api/mcp/asset/db3f5c75-f350-407f-ad1a-9de33366cbaf";
+const imgVector547 = "https://www.figma.com/api/mcp/asset/20226094-ff02-43cb-a758-62562ea900e5";
+const imgVector462 = "https://www.figma.com/api/mcp/asset/5d0758bb-3203-4f8e-a8c6-2811a6169c40";
 
 export function KeyTakeawaysSlide1({ className }: { className?: string }) {
   const [scale, setScale] = useState(1);
@@ -16,15 +16,12 @@ export function KeyTakeawaysSlide1({ className }: { className?: string }) {
     const updateScale = () => {
       const viewportWidth = window.innerWidth;
       const maxCardWidth = 1150; // Account for padding
-      const cardWidth = 1030;
-      
       if (viewportWidth < maxCardWidth) {
         setScale(Math.min(1, viewportWidth / maxCardWidth));
       } else {
         setScale(1);
       }
     };
-
     updateScale();
     window.addEventListener('resize', updateScale);
     return () => window.removeEventListener('resize', updateScale);
@@ -36,7 +33,7 @@ export function KeyTakeawaysSlide1({ className }: { className?: string }) {
       <p 
         className={cn(
           "font-['Barmeno,sans-serif'] text-[24px] md:text-[48px] leading-[1.2] md:leading-[0.93] text-[#1f1f1f] text-center tracking-[-1.44px] whitespace-normal md:whitespace-pre-wrap max-w-[987px]",
-          "font-medium"
+          "font-medium px-4"
         )}
         data-node-id="965:3037"
       >
@@ -46,167 +43,135 @@ export function KeyTakeawaysSlide1({ className }: { className?: string }) {
         <span> bagi mahasiswa IPB pada tahun 2025</span>
       </p>
 
-      {/* Card */}
+      {/* Card - WHITE BACKGROUND VISIBLE */}
       <div 
-        className="relative bg-white rounded-[16.759px] w-full max-w-[1030px] aspect-[1030/636] shadow-[0px_0px_22.016px_0px_rgba(0,0,0,0.15)] overflow-clip"
+        className="relative bg-white rounded-[16.759px] w-full max-w-[1030px] shadow-[0px_0px_22.016px_0px_rgba(0,0,0,0.15)] overflow-clip"
         data-node-id="965:3038"
         style={{ aspectRatio: '1030/636' }}
       >
-        {/* Scaled Content Container */}
-        <div className="absolute inset-0 w-full h-full overflow-hidden">
-            <div 
-              className="relative w-[1030px] h-[636px] origin-top-left"
-              style={{
-                transform: `scale(${scale})`
-              }}
-            >
-                {/* Background Layers */}
-                <div className="absolute left-[-282.18px] top-[-381px] w-[1594.578px] h-[2217px]" data-node-id="965:3039">
-                    <div className="absolute left-[75.18px] top-[271px] w-[1464px] h-[1946px] mix-blend-overlay opacity-[0.23]" data-node-id="965:3040">
-                        <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                            <img className="absolute h-full left-[-16.48%] max-w-none top-0 w-[132.95%]" alt="" src={img653899114923} />
-                        </div>
-                    </div>
-                    <div className="absolute bg-[#123880] h-[346px] left-[340.35px] rounded-[13.966px] top-[423px] w-[912px]" data-node-id="965:3041" />
-                    
-                    {/* Masked Group */}
-                    <div className="absolute left-[453.35px] top-[423.43px]" data-node-id="965:3042">
-                        <div className="absolute flex inset-[19.08%_19.38%_67.84%_39.63%] items-center justify-center">
-                            <div className="flex-none h-[653.71px] rotate-[270deg] scale-y-[-100%] w-[290.097px]">
-                                <div 
-                                    className="relative size-full mask-alpha mask-no-clip"
-                                    style={{
-                                        maskImage: `url('${imgGroup2608332}')`,
-                                        WebkitMaskImage: `url('${imgGroup2608332}')`,
-                                        maskRepeat: 'no-repeat',
-                                        WebkitMaskRepeat: 'no-repeat',
-                                        maskPosition: '-178.511px 0.482px',
-                                        WebkitMaskPosition: '-178.511px 0.482px',
-                                        maskSize: '799.089px 345.453px',
-                                        WebkitMaskSize: '799.089px 345.453px'
-                                    }}
-                                    data-node-id="965:3044"
-                                >
-                                    <img className="block max-w-none size-full" alt="" src={imgGroup2608333} />
-                                </div>
-                            </div>
-                        </div>
-                        <div 
-                            className="absolute h-[277.07px] left-[598.31px] top-[490.6px] w-[660.309px] mask-alpha mask-no-clip"
-                            style={{
-                                maskImage: `url('${imgGroup2608332}')`,
-                                WebkitMaskImage: `url('${imgGroup2608332}')`,
-                                maskRepeat: 'no-repeat',
-                                WebkitMaskRepeat: 'no-repeat',
-                                maskPosition: '-144.968px -67.171px',
-                                WebkitMaskPosition: '-144.968px -67.171px',
-                                maskSize: '799.089px 345.453px',
-                                WebkitMaskSize: '799.089px 345.453px'
-                            }}
-                            data-node-id="965:3053"
-                        >
-                            <div className="absolute inset-[-38.67%_-16.22%]">
-                                <img className="block max-w-none size-full" alt="" src={imgVector547} />
-                            </div>
-                        </div>
-                        <div 
-                            className="absolute h-[2054.915px] left-[99.77px] top-[-718.49px] w-[1605.858px] mask-alpha mask-no-clip"
-                            style={{
-                                maskImage: `url('${imgGroup2608332}')`,
-                                WebkitMaskImage: `url('${imgGroup2608332}')`,
-                                maskRepeat: 'no-repeat',
-                                WebkitMaskRepeat: 'no-repeat',
-                                maskPosition: '353.58px 1141.915px',
-                                WebkitMaskPosition: '353.58px 1141.915px',
-                                maskSize: '799.089px 345.453px',
-                                WebkitMaskSize: '799.089px 345.453px'
-                            }}
-                            data-node-id="965:3054"
-                        >
-                            <img className="absolute inset-0 max-w-none object-cover pointer-events-none size-full" style={{ objectPosition: '50% 50%' }} alt="" src={imgTakBerjudul57420251220192217} />
-                        </div>
-                        <div 
-                            className="absolute h-[516.185px] left-[830.17px] top-[294.09px] w-[496.491px] mask-alpha mask-no-clip"
-                            style={{
-                                maskImage: `url('${imgGroup2608332}')`,
-                                WebkitMaskImage: `url('${imgGroup2608332}')`,
-                                maskRepeat: 'no-repeat',
-                                WebkitMaskRepeat: 'no-repeat',
-                                maskPosition: '-376.825px 129.337px',
-                                WebkitMaskPosition: '-376.825px 129.337px',
-                                maskSize: '799.089px 345.453px',
-                                WebkitMaskSize: '799.089px 345.453px'
-                            }}
-                            data-node-id="965:3055"
-                        >
-                            <div className="absolute inset-0 overflow-hidden pointer-events-none">
-                                <img className="absolute h-[304.23%] left-[-101.76%] max-w-none top-[-135.06%] w-[247.18%]" alt="" src={imgTakBerjudul57420251220192057} />
-                            </div>
-                        </div>
-                    </div>
-
-                    {/* Text Content */}
-                    <p className="absolute font-bold leading-[1.3] left-[406.35px] text-[56.261px] text-white top-[460.56px] tracking-[-1.1252px]" style={{ fontFamily: 'Fraunces, sans-serif', fontVariationSettings: "'SOFT' 0, 'WONK' 1" }}>
-                        Lanskap
-                    </p>
-                    <p className="absolute font-bold leading-[1.3] left-[406.35px] text-[56.261px] text-white top-[517.89px] tracking-[-1.1252px]" style={{ fontFamily: 'Fraunces, sans-serif', fontVariationSettings: "'SOFT' 0, 'WONK' 1" }}>
-                        Ormawa
-                    </p>
-                    <p className="absolute font-bold leading-[1.3] left-[406.35px] text-[56.261px] text-white top-[580.89px] tracking-[-1.1252px]" style={{ fontFamily: 'Fraunces, sans-serif', fontVariationSettings: "'SOFT' 0, 'WONK' 1" }}>
-                        2025
-                    </p>
-                    <p className="absolute leading-[1.3] left-[406.35px] text-[22.092px] text-white top-[665.46px] tracking-[-0.2209px] w-[204.906px] whitespace-pre-wrap" style={{ fontFamily: 'Satoshi, sans-serif' }}>
-                        Ringkasan Lanskap Ormawa
-                    </p>
-                </div>
-
-                {/* Bottom Stats */}
-                <div className="absolute flex items-end justify-between left-[calc(50%+7.16px)] top-[435px] -translate-x-1/2 w-[866px]" data-node-id="965:3060">
-                    {/* Stat 1 */}
-                    <div className="inline-grid justify-items-start leading-[0]">
-                         <p className="col-[1] row-[1] mt-0 ml-[0.24px] text-[38.821px] leading-[1.3] tracking-[-1.1646px] bg-gradient-to-b from-[#2350A6] to-[#0D2456] bg-clip-text text-transparent font-bold" style={{ fontFamily: 'Fraunces, sans-serif', fontVariationSettings: "'SOFT' 0, 'WONK' 1" }}>
-                            Pergeseran
-                        </p>
-                        <p className="col-[1] row-[1] mt-[66.53px] text-[#2350a6] text-[23.456px] leading-[1.05] tracking-[-0.2346px] w-[256.595px]" style={{ fontFamily: 'Satoshi, sans-serif' }}>
-                            <span className="font-bold">Komunitas</span> tumbuh pesat, <span className="font-bold">OMDA</span> mengalami penurunan tren.
-                        </p>
-                    </div>
-                    
-                    {/* Divider */}
-                    <div className="h-full w-0 relative">
-                        <div className="absolute inset-[0_-0.7px]">
-                            <img className="block max-w-none size-full" alt="" src={imgVector462} />
-                        </div>
-                    </div>
-
-                    {/* Stat 2 */}
-                    <div className="inline-grid justify-items-start leading-[0]">
-                        <p className="col-[1] row-[1] mt-0 ml-[0.07px] text-[38.821px] leading-[1.3] tracking-[-1.1646px] bg-gradient-to-b from-[#2350A6] to-[#0D2456] bg-clip-text text-transparent font-bold" style={{ fontFamily: 'Fraunces, sans-serif', fontVariationSettings: "'SOFT' 0, 'WONK' 1" }}>
-                            Massa
-                        </p>
-                        <p className="col-[1] row-[1] mt-[65.41px] text-[#2350a6] text-[23.456px] leading-[1.05] tracking-[-0.2346px] w-[213.915px]" style={{ fontFamily: 'Satoshi, sans-serif' }}>
-                            <span className="font-bold">Ormawa Wilayah</span> memegang rasio partisipasi terpadat.
-                        </p>
-                    </div>
-
-                    {/* Divider */}
-                    <div className="h-full w-0 relative">
-                        <div className="absolute inset-[0_-0.7px]">
-                            <img className="block max-w-none size-full" alt="" src={imgVector462} />
-                        </div>
-                    </div>
-
-                    {/* Stat 3 */}
-                    <div className="inline-grid justify-items-start leading-[0]">
-                        <p className="col-[1] row-[1] mt-0 ml-[0.07px] text-[38.821px] leading-[1.3] tracking-[-1.1646px] bg-gradient-to-b from-[#2350A6] to-[#0D2456] bg-clip-text text-transparent font-bold" style={{ fontFamily: 'Fraunces, sans-serif', fontVariationSettings: "'SOFT' 0, 'WONK' 1" }}>
-                            Puncak:
-                        </p>
-                        <p className="col-[1] row-[1] mt-[65.41px] text-[#2350a6] text-[23.456px] leading-[1.05] tracking-[-0.2346px] w-[213.915px]" style={{ fontFamily: 'Satoshi, sans-serif' }}>
-                            <span className="font-bold">Sekolah Vokasi</span> memimpin total indeks keterlibatan.
-                        </p>
-                    </div>
-                </div>
+        {/* Fixed 1030x636 scaled container */}
+        <div className="absolute inset-0 flex items-center justify-center">
+          <div 
+            className="relative w-[1030px] h-[636px]"
+            style={{
+              transform: `scale(${scale})`,
+              transformOrigin: 'center center'
+            }}
+          >
+            {/* Content starts here - position 0,0 is top-left of 1030x636 card */}
+            
+            {/* Background pattern overlay - stays within bounds */}
+            <div className="absolute left-[75.18px] top-[-109px] w-[1464px] h-[1946px] mix-blend-overlay opacity-[0.23] pointer-events-none overflow-hidden">
+              <img className="absolute h-full left-[-16.48%] max-w-none top-0 w-[132.95%]" alt="" src={img653899114923} />
             </div>
+            
+            {/* Blue card background */}
+            <div className="absolute bg-[#123880] h-[346px] left-[58.17px] rounded-[14px] top-[42px] w-[912px]" data-node-id="965:3041" />
+            
+            {/* Masked photo group */}
+            <div className="absolute left-[171.17px] top-[42.43px]" data-node-id="965:3042">
+              {/* Photo composition with mask */}
+              <div className="absolute flex left-0 top-0 items-center justify-center w-[458.65px] h-[345.43px]">
+                <div className="w-full h-full rounded-[14px] overflow-hidden">
+                  <img 
+                    className="w-full h-full object-cover" 
+                    alt="" 
+                    src={imgTakBerjudul57420251220192217}
+                  />
+                </div>
+              </div>
+              
+              {/* Second photo - overlapping */}
+              <div className="absolute right-0 bottom-0 w-[300px] h-[200px]">
+                <img 
+                  className="w-full h-full object-cover rounded-[8px]" 
+                  alt="" 
+                  src={imgTakBerjudul57420251220192057}
+                />
+              </div>
+            </div>
+
+            {/* Text Content - Left side */}
+            <p 
+              className="absolute font-bold leading-[1.3] left-[124.17px] text-[56.261px] text-white top-[79.56px] tracking-[-1.1252px]" 
+              style={{ fontFamily: 'Fraunces, sans-serif', fontVariationSettings: "'SOFT' 0, 'WONK' 1" }}
+              data-node-id="965:3056"
+            >
+              Lanskap
+            </p>
+            <p 
+              className="absolute font-bold leading-[1.3] left-[124.17px] text-[56.261px] text-white top-[136.89px] tracking-[-1.1252px]" 
+              style={{ fontFamily: 'Fraunces, sans-serif', fontVariationSettings: "'SOFT' 0, 'WONK' 1" }}
+              data-node-id="965:3057"
+            >
+              Ormawa
+            </p>
+            <p 
+              className="absolute font-bold leading-[1.3] left-[124.17px] text-[56.261px] text-white top-[199.89px] tracking-[-1.1252px]" 
+              style={{ fontFamily: 'Fraunces, sans-serif', fontVariationSettings: "'SOFT' 0, 'WONK' 1" }}
+              data-node-id="965:3058"
+            >
+              2025
+            </p>
+            <p 
+              className="absolute font-['Satoshi_Variable',sans-serif] leading-[1.3] left-[124.17px] text-[22.092px] text-white top-[284.46px] tracking-[-0.2209px] w-[204.906px] whitespace-pre-wrap"
+              data-node-id="965:3059"
+            >
+              Ringkasan Lanskap Ormawa
+            </p>
+
+            {/* Bottom stats section */}
+            <div className="absolute flex items-end justify-between left-[82px] bottom-[54px] w-[866px]" data-node-id="965:3060">
+              {/* Pergeseran */}
+              <div className="flex flex-col items-start">
+                <p 
+                  className="font-bold leading-[1.3] text-[#2350a6] text-[38.821px] tracking-[-1.1646px] mb-2" 
+                  style={{ fontFamily: 'Fraunces, sans-serif', fontVariationSettings: "'SOFT' 0, 'WONK' 1" }}
+                  data-node-id="965:3063"
+                >
+                  Pergeseran
+                </p>
+                <p className="font-['Satoshi_Variable',sans-serif] leading-[1.05] text-[#2350a6] text-[23.456px] tracking-[-0.2346px] w-[256.595px]">
+                  <span className="font-bold">Komunitas</span> tumbuh pesat, <span className="font-bold">OMDA</span> mengalami penurunan tren.
+                </p>
+              </div>
+
+              {/* Divider */}
+              <div className="self-stretch w-[1px] bg-[#2350a6] mx-4" />
+
+              {/* Massa */}
+              <div className="flex flex-col items-start">
+                <p 
+                  className="font-bold leading-[1.3] text-[#2350a6] text-[38.821px] tracking-[-1.1646px] mb-2" 
+                  style={{ fontFamily: 'Fraunces, sans-serif', fontVariationSettings: "'SOFT' 0, 'WONK' 1" }}
+                  data-node-id="965:3067"
+                >
+                  Massa
+                </p>
+                <p className="font-['Satoshi_Variable',sans-serif] leading-[1.05] text-[#2350a6] text-[23.456px] tracking-[-0.2346px] w-[213.915px] whitespace-pre-wrap">
+                  <span className="font-bold">Ormawa Wilayah</span> memegang rasio partisipasi terpadat.
+                </p>
+              </div>
+
+              {/* Divider */}
+              <div className="self-stretch w-[1px] bg-[#2350a6] mx-4" />
+
+              {/* Puncak */}
+              <div className="flex flex-col items-start">
+                <p 
+                  className="font-bold leading-[1.3] text-[#2350a6] text-[38.821px] tracking-[-1.1646px] mb-2" 
+                  style={{ fontFamily: 'Fraunces, sans-serif', fontVariationSettings: "'SOFT' 0, 'WONK' 1" }}
+                  data-node-id="965:3071"
+                >
+                  Puncak:
+                </p>
+                <p className="font-['Satoshi_Variable',sans-serif] leading-[1.05] text-[#2350a6] text-[23.456px] tracking-[-0.2346px] w-[213.915px] whitespace-pre-wrap">
+                  <span className="font-bold">Sekolah Vokasi</span> memimpin total indeks keterlibatan.
+                </p>
+              </div>
+            </div>
+
+          </div>
         </div>
       </div>
     </div>
