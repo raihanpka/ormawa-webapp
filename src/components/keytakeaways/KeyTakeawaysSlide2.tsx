@@ -14,8 +14,10 @@ export function KeyTakeawaysSlide2({ className }: { className?: string }) {
     <div className={cn("flex flex-col items-center gap-[33px] w-full", className)} data-node-id="976:3090">
       {/* Main Heading */}
       <p 
-        className="text-[#1f1f1f] text-[24px] md:text-[48px] text-center leading-[1.2] md:leading-[0.93] tracking-[-1.44px] whitespace-normal md:whitespace-pre-wrap max-w-[880px]"
-        style={{ fontFamily: 'Fraunces, sans-serif', fontVariationSettings: "'SOFT' 0, 'WONK' 1" }}
+        className={cn(
+          "font-['Barmeno,sans-serif'] text-[24px] md:text-[48px] leading-[1.2] md:leading-[0.93] text-[#1f1f1f] text-center tracking-[-1.44px] whitespace-normal md:whitespace-pre-wrap max-w-[987px]",
+          "font-medium"
+        )}
         data-node-id="976:3091"
       >
         <span style={{ fontFamily: 'Barmeno, sans-serif', fontWeight: 500 }}>Tahun 2025 </span>

@@ -5,6 +5,9 @@ import { useState } from "react";
 import { KeyTakeawaysHeader } from "../keytakeaways/KeyTakeawaysHeader";
 import { KeyTakeawaysSlide1 } from "../keytakeaways/KeyTakeawaysSlide1";
 import { KeyTakeawaysSlide2 } from "../keytakeaways/KeyTakeawaysSlide2";
+import { KeyTakeawaysSlide3 } from "../keytakeaways/KeyTakeawaysSlide3";
+import { KeyTakeawaysSlide4 } from "../keytakeaways/KeyTakeawaysSlide4";
+import { KeyTakeawaysSlide5 } from "../keytakeaways/KeyTakeawaysSlide5";
 import { motion, AnimatePresence } from "framer-motion";
 
 const imgGroup2608519 = "https://www.figma.com/api/mcp/asset/30c9a508-8791-444f-82c6-b0b695c8ca4a";
@@ -13,7 +16,7 @@ const imgExpandCircleRight1 = "https://www.figma.com/api/mcp/asset/8385b6b0-b110
 
 export function KeyTakeawaysSection() {
   const [currentSlide, setCurrentSlide] = useState(0);
-  const totalSlides = 2;
+  const totalSlides = 5;
 
   const nextSlide = () => {
     setCurrentSlide((prev) => (prev + 1) % totalSlides);
@@ -65,7 +68,11 @@ export function KeyTakeawaysSection() {
               transition={{ duration: 0.3 }}
               className="w-full flex justify-center"
             >
-              {currentSlide === 0 ? <KeyTakeawaysSlide1 /> : <KeyTakeawaysSlide2 />}
+              {currentSlide === 0 && <KeyTakeawaysSlide1 />}
+              {currentSlide === 1 && <KeyTakeawaysSlide2 />}
+              {currentSlide === 2 && <KeyTakeawaysSlide3 />}
+              {currentSlide === 3 && <KeyTakeawaysSlide4 />}
+              {currentSlide === 4 && <KeyTakeawaysSlide5 />}
             </motion.div>
           </AnimatePresence>
         </div>
